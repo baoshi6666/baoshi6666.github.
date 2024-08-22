@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎回来！"},
   LA51: undefined,
   greetingBox: undefined,
-  twikooEnvId: 'https://pilun.zeabur.app/',
+  twikooEnvId: '',
   commentBarrageConfig:undefined,
   root: '/',
   preloader: {"source":3},
@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-08-22 19:07:31',
+  postUpdate: '2024-08-22 22:45:10',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -5566,7 +5566,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://pilun.zeabur.app/',
+      envId: '',
       region: '',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -5583,7 +5583,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://pilun.zeabur.app/',
+      envId: '',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -5625,7 +5625,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://pilun.zeabur.app/',
+        envId: '',
         region: '',
         pageSize: 6,
         includeReply: true
