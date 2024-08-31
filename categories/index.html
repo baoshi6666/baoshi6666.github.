@@ -5,7 +5,7 @@
   diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎回来！"},
   LA51: undefined,
   greetingBox: undefined,
-  twikooEnvId: 'https://jyujiaf-twitoo2.hf.space/',
+  twikooEnvId: 'https://waline.baoshi666.us.kg',
   commentBarrageConfig:undefined,
   root: '/',
   preloader: {"source":3},
@@ -278,7 +278,7 @@ queueMicrotask(() => {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://jyujiaf-twitoo2.hf.space/',
+      envId: 'https://waline.baoshi666.us.kg',
       region: '',
       onCommentLoaded: () => {
         anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -295,7 +295,7 @@ queueMicrotask(() => {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://jyujiaf-twitoo2.hf.space/',
+      envId: 'https://waline.baoshi666.us.kg',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -337,7 +337,7 @@ queueMicrotask(() => {
   const getComment = () => {
     const runTwikoo = () => {
       twikoo.getRecentComments({
-        envId: 'https://jyujiaf-twitoo2.hf.space/',
+        envId: 'https://waline.baoshi666.us.kg',
         region: '',
         pageSize: 6,
         includeReply: true
